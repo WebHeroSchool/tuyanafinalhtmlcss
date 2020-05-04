@@ -1,3 +1,178 @@
-body {
+* {
 	font-family: "GothamPro-Medium";
+}
+/* header's style */
+header {
+	height: 95px;
+}
+.header__smallscreen {
+	visibility: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header__desktop {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	min-width: 770px;
+	max-width: 1600px;
+	margin: 0px 70px 20px 70px;		
+}
+.nav__block {	
+	width: 335px;	
+	display: flex;	
+	justify-content: space-between;
+}
+.nav__link, .profile__link, .cart__link {
+	text-decoration: none;
+	color: black;
+}
+
+.header__cart {
+	display: flex;
+	flex-direction: row
+}
+
+.smallscreen__logo_img {
+	position: absolute;
+	top: 41px;
+	left: 43px;
+	cursor: pointer;
+}
+.burger__top {
+		position: absolute;
+		width: 60.85px;
+		height: 8.89px;
+		background: #000000;
+		top: 46px;
+		right: 44px;
+		cursor: pointer;
+	}
+.burger__bottom {
+		position: absolute;
+		width: 60.85px;
+		height: 8.89px;
+		background: #000000;
+		top: 63px;
+		right: 44px;
+		cursor: pointer;
+	}
+
+/*  1-я секция */
+.section__stock {
+	background-image: url(./rob-potter.png);
+	background-size: cover;
+	height: 280px;	
+	margin: 0 70px 10px 70px;
+	min-width: 770px;
+	max-width: 1600px;
+}
+
+.shop__quote {
+	color: white;
+	padding-left: 60px;
+	font-size: 30px;
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-top: 0;
+	padding-top: 90.87px;
+}
+.shop__link {
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+	padding-left: 61px;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+	.header__desktop {
+		visibility: hidden;
+	}
+	.header__smallscreen {
+		visibility: visible;
+	}
+	.section__stock {
+		background-image: url(./rob-potter-phone.png);
+		background-size: cover;
+		margin: 0 0 10px 0;
+		min-width: 376px;
+		max-width: 768px;
+		height: 415px;		
+	}
+	.shop__quote {
+		font-size: 50px;		
+	}
+	.shop__link {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+	.header__desktop {
+		visibility: hidden;
+	}
+	.header__smallscreen {
+		visibility: visible;
+	}
+	.smallscreen__logo_img {	
+	top: 24px;
+	left: 48px;
+	width: 104px;
+	height: 22px;
+	}
+	.burger__top {		
+		width: 41px;
+		height: 5px;		
+		top: 28px;
+		right: 44px;
+	}
+	.burger__bottom {		
+		width: 41px;
+		height: 5px;		
+		top: 38px;
+		right: 44px;		
+	}	
+	.section__stock {
+		background-image: url(./rob-potter-phone.png);
+		background-size: cover;
+		margin: 0 0 10px 0;
+		min-width: 320px;
+		max-width: 375px;
+		height: 191px;
+	}
+	.shop__quote {
+		font-size: 20px;
+		padding-top: 60px;
+		padding-left: 48px;		
+	}
+	.shop__link {
+		font-size: 12px;
+		padding-left: 48px;
+	}	
+}
+/* 2я секция */
+.featured__products {	
+	display: flex;
+	flex-direction: row;
+}
+/*3я секция */
+.section__article {
+	display: flex;
+	flex-direction: row;
+}
+/* 4я секция */
+.stories__recent {
+	display: flex;
+	flex-direction: row;
+}
+
+/* footer */
+.footer__main {
+	display: flex;
+	flex-direction: row;
+}
+.footer__account, .footer__service, .footer__others {
+	display: flex;
+	flex-direction: column;
 }
