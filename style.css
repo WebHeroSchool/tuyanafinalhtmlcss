@@ -3,7 +3,7 @@
 }
 /* header's style */
 header {
-	height: 95px;
+	height: 95px;	
 }
 .header__smallscreen {
 	visibility: hidden;
@@ -35,7 +35,12 @@ header {
 	display: flex;
 	flex-direction: row
 }
-
+.cart__link {
+	padding-top: 2px;
+}
+.cart__quantity {
+	padding-left: 2px;	
+}
 .smallscreen__logo_img {
 	position: absolute;
 	top: 41px;
@@ -86,7 +91,16 @@ header {
 	font-size: 12px;
 	padding-left: 61px;
 }
-@media screen and (min-width: 376px) and (max-width: 768px) {
+
+@media screen and (min-width: 800px) and (max-width: 945px) {
+	.header__desktop {
+		margin: 0 0 20px 0;
+	}
+	.section__stock {
+	margin: 0 0 10px 0;	
+	}
+}
+@media screen and (min-width: 376px) and (max-width: 800px) {
 	.header__desktop {
 		visibility: hidden;
 	}
