@@ -1,16 +1,21 @@
 * {
-	font-family: "GothamPro-Medium";
+	font-family: "GothamPro-Medium", sans-serif;
 }
+
 /* header's style */
+
 header {
-	height: 95px;	
+	height: 95px;
+	margin-bottom: 10px;
 }
+
 .header__smallscreen {
 	visibility: hidden;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 .header__desktop {
 	display: flex;
 	flex-direction: row;
@@ -19,135 +24,289 @@ header {
 	font-size: 12px;
 	min-width: 770px;
 	max-width: 1600px;
-	margin: 0px 70px 20px 70px;		
+	margin: 0 70px 50px 70px;
 }
+
+.header__logo {
+	padding-top: 24px;
+}
+
+.header__nav {
+	width: 495px;
+}
+
 .nav__block {	
-	width: 335px;	
-	display: flex;	
+	width: 335px;
+	display: flex;
 	justify-content: space-between;
 }
-.nav__link, .profile__link, .cart__link {
+
+.nav__link,
+.profile__link,
+.cart__link {
 	text-decoration: none;
 	color: black;
 }
 
+.nav__link,
+.header__profile,
+.header__cart,
+.header__language {
+	padding-top: 18px;
+}
+
+.header__search {
+	padding-top: 25px;
+}
+
+.form__text {
+	border: none;
+	width: 155px;
+}
+
+.search__form {
+	border-bottom: 1px solid black;
+}
+
 .header__cart {
 	display: flex;
-	flex-direction: row
+	flex-direction: row;
 }
+
 .cart__link {
 	padding-top: 2px;
 }
+
 .cart__quantity {
-	padding-left: 2px;	
+	padding-left: 2px;
 }
+
 .smallscreen__logo_img {
 	position: absolute;
 	top: 41px;
 	left: 43px;
 	cursor: pointer;
 }
+
 .burger__top {
 		position: absolute;
 		width: 60.85px;
 		height: 8.89px;
-		background: #000000;
+		background: #000;
 		top: 46px;
-		right: 44px;
+		right: 30px;
 		cursor: pointer;
-	}
+}
+
 .burger__bottom {
 		position: absolute;
 		width: 60.85px;
 		height: 8.89px;
-		background: #000000;
+		background: #000;
 		top: 63px;
-		right: 44px;
+		right: 30px;
 		cursor: pointer;
-	}
+}
 
 /*  1-я секция */
+
 .section__stock {
 	background-image: url(./rob-potter.png);
 	background-size: cover;
-	height: 280px;	
-	margin: 0 70px 10px 70px;
+	height: 280px;
+	margin: 0 70px 55px 70px;
 	min-width: 770px;
 	max-width: 1600px;
 }
 
 .shop__quote {
 	color: white;
-	padding-left: 60px;
+	padding-left: 50px;
 	font-size: 30px;
 	margin-bottom: 15px;
 	margin-left: 0;
 	margin-top: 0;
 	padding-top: 90.87px;
+	line-height: .95;
 }
+
 .shop__link {
 	color: white;
 	text-decoration: none;
 	font-size: 12px;
-	padding-left: 61px;
+	padding-left: 51px;
+}
+
+/*адаптив*/
+
+@media screen and (min-width: 946px) and (max-width: 1024px) {
+	body {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	header {
+		margin-bottom: 23px;
+	}	
+
+	.header__desktop {
+		min-width: 850px;
+		max-width: 930px;
+		margin: 8px 30px 50px 50px;
+	}
+
+	.header__nav {
+		width: 395px;
+	}
+
+	.nav__block {
+		padding-left: 5px;
+	}
+
+	.header__search {
+		padding-left: 52px;
+	}
+
+	.form__text {
+	width: 150px;
+	}	
+
+	.section__stock {
+		min-width: 850px;
+		max-width: 930px;
+		height: 252.82px;
+		margin: 0 30px 50px 50px;
+	}
+
+	.shop__quote {
+		padding-top: 80px;
+		padding-left: 55px;
+		margin-bottom: 7px;
+	}
+
+	.shop__link {
+		padding-left: 57px;
+	}
 }
 
 @media screen and (min-width: 800px) and (max-width: 945px) {
 	.header__desktop {
 		margin: 0 0 20px 0;
 	}
+
+	.header__nav {
+		max-width: 400px;
+		min-width: 335px;
+	}
+
 	.section__stock {
-	margin: 0 0 10px 0;	
+		margin: 0 0 10px 0;
 	}
 }
-@media screen and (min-width: 376px) and (max-width: 800px) {
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
 	.header__desktop {
 		visibility: hidden;
 	}
+
 	.header__smallscreen {
 		visibility: visible;
 	}
+}
+
+@media screen and (min-width: 721px) and (max-width: 800px){	
 	.section__stock {
 		background-image: url(./rob-potter-phone.png);
 		background-size: cover;
 		margin: 0 0 10px 0;
 		min-width: 376px;
 		max-width: 768px;
-		height: 415px;		
+		height: 415px;
 	}
+
 	.shop__quote {
-		font-size: 50px;		
+		font-size: 50px;
+		padding-top: 125px;
+		padding-left: 35px;
+		margin-bottom: 45px;
 	}
+
 	.shop__link {
 		font-size: 20px;
+		padding-left: 36px;
+		padding-top: 50px;
+	}
+
+	.shop__arrow {
+		width: 73px;
 	}
 }
-@media screen and (min-width: 320px) and (max-width: 375px) {
+
+@media screen and (min-width: 581px) and (max-width: 720px) {
+	.section__stock {
+		background-image: url(./rob-potter720.png);
+		margin: 0 0 10px 0;
+		min-width: 581px;
+		max-width: 720px;
+	}
+}
+
+@media screen and (min-width: 376px) and (max-width: 580px) {
+	.section__stock {
+		background-image: url(./rob-potter580.png);
+		height: 218px;
+		margin: 0 0 10px 0;
+		min-width: 376px;
+		max-width: 580px;
+	}
+
+	.shop__quote {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+	body {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	header {
+		height: 63px;
+		margin-bottom: 0;
+	}
+
 	.header__desktop {
 		visibility: hidden;
 	}
+
 	.header__smallscreen {
 		visibility: visible;
 	}
-	.smallscreen__logo_img {	
-	top: 24px;
-	left: 48px;
-	width: 104px;
-	height: 22px;
+
+	.smallscreen__logo_img {
+		top: 24px;
+		left: 48px;
+		width: 104px;
+		height: 22px;
 	}
-	.burger__top {		
+
+	.burger__top {
 		width: 41px;
-		height: 5px;		
+		height: 5px;
 		top: 28px;
-		right: 44px;
+		right: 30px;
 	}
-	.burger__bottom {		
+
+	.burger__bottom {
 		width: 41px;
-		height: 5px;		
+		height: 5px;
 		top: 38px;
-		right: 44px;		
-	}	
+		right: 30px;
+	}
+
 	.section__stock {
+		position: relative;
 		background-image: url(./rob-potter-phone.png);
 		background-size: cover;
 		margin: 0 0 10px 0;
@@ -155,38 +314,191 @@ header {
 		max-width: 375px;
 		height: 191px;
 	}
+
 	.shop__quote {
 		font-size: 20px;
-		padding-top: 60px;
-		padding-left: 48px;		
+		padding-top: 65px;
+		padding-left: 48px;
 	}
+
 	.shop__link {
 		font-size: 12px;
 		padding-left: 48px;
+	}
+}
+
+@media screen and (min-width: 200px) and (max-width: 320px) {
+	body {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	header {
+		height: 63px;
+		margin-bottom: 0;
+	}
+
+	.header__desktop {
+		visibility: hidden;
+	}
+
+	.header__smallscreen {
+		visibility: visible;
+	}
+
+	.smallscreen__logo_img {
+		top: 24px;
+		left: 27px;
+		width: 104px;
+		height: 22px;
+	}
+
+	.burger__top {
+		width: 41px;
+		height: 5px;
+		top: 28px;
+		right: 0px;
+	}
+
+	.burger__bottom {
+		width: 41px;
+		height: 5px;
+		top: 38px;
+		right: 0px;
+	}
+
+	.section__stock {
+		position: relative;
+		background-image: url(./rob-potter320.png);
+		background-size: cover;
+		margin: 0 0 10px 0;
+		min-width: 320px;
+		max-width: 375px;
+		height: 191px;
+	}
+
+	.shop__quote {
+		font-size: 20px;
+		padding-top: 65px;
+		padding-left: 27px;
+	}
+
+	.shop__link {
+		font-size: 12px;
+		padding-left: 27px;
 	}	
 }
+
 /* 2я секция */
-.featured__products {	
+
+.section__featured {
+	margin: 0 70px 20px 70px;
+}
+
+.featured__title {
+	text-align: center;
+	font-size: 22px;
+}
+
+.featured__products {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
+
+.product {
+	height: 261px;
+	width: 230px;
+}
+
+.product__name {
+	font-size: 12px;
+}
+
+.product__options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product__price {
+	font-size: 14px;
+	font-weight: bold;
+	border-right: 1px solid c4c4c4;
+}
+
+.colors__button {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: none;
+	padding: 0;
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+.colors__button::hover {
+	width: 9px;
+	height: 9px;
+}
+
+.colors__grey {
+	background-color: #c4c4c4;
+}
+
+.colors__black {
+	background-color: #0e1211;
+}
+
+.colors__red {
+	background-color: #b62e3c;
+}
+
+.colors__yellow {
+	background-color: #fdb431;
+}
+
+.colors__orange {
+	background-color: #e29d69;
+}
+
+.colors__brown {
+	background-color: #762e31;
+}
+
+.colors__blue {
+	background-color: #41479b;
+}
+
+.colors__blueelectric {
+	background-color: #257da9;
+}
+
 /*3я секция */
+
 .section__article {
 	display: flex;
 	flex-direction: row;
 }
+
 /* 4я секция */
+
 .stories__recent {
 	display: flex;
 	flex-direction: row;
 }
 
 /* footer */
+
 .footer__main {
 	display: flex;
 	flex-direction: row;
 }
-.footer__account, .footer__service, .footer__others {
+
+.footer__account,
+.footer__service,
+.footer__others {
 	display: flex;
 	flex-direction: column;
 }
