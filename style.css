@@ -148,6 +148,7 @@ header {
   header {
     margin-bottom: 23px;
   }
+  
   .header__desktop {
     min-width: 850px;
     max-width: 930px;
