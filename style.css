@@ -36,7 +36,6 @@ header {
 }
 
 .nav__block {
-
   width: 335px;
   display: flex;
   justify-content: space-between;
@@ -148,8 +147,7 @@ header {
 
   header {
     margin-bottom: 23px;
-  } 
-
+  }
   .header__desktop {
     min-width: 850px;
     max-width: 930px;
@@ -215,8 +213,7 @@ header {
   }
 }
 
-@media screen and (min-width: 721px) and (max-width: 800px){
-  
+@media screen and (min-width: 721px) and (max-width: 800px) {
   .section__stock {
     background-image: url(./rob-potter-phone.png);
     background-size: cover;
@@ -359,7 +356,7 @@ header {
     width: 41px;
     height: 5px;
     top: 28px;
-    right: 0px;
+    right: 0;
   }
 
   .burger__bottom {
@@ -389,7 +386,6 @@ header {
     font-size: 12px;
     padding-left: 27px;
   }
-
 }
 
 /* 2я секция */
