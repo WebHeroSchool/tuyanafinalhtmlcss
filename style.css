@@ -35,7 +35,8 @@ header {
   width: 495px;
 }
 
-.nav__block { 
+.nav__block {
+
   width: 335px;
   display: flex;
   justify-content: space-between;
@@ -89,23 +90,23 @@ header {
 }
 
 .burger__top {
-    position: absolute;
-    width: 60.85px;
-    height: 8.89px;
-    background: #000;
-    top: 46px;
-    right: 30px;
-    cursor: pointer;
+  position: absolute;
+  width: 60.85px;
+  height: 8.89px;
+  background: #000;
+  top: 46px;
+  right: 30px;
+  cursor: pointer;
 }
 
 .burger__bottom {
-    position: absolute;
-    width: 60.85px;
-    height: 8.89px;
-    background: #000;
-    top: 63px;
-    right: 30px;
-    cursor: pointer;
+  position: absolute;
+  width: 60.85px;
+  height: 8.89px;
+  background: #000;
+  top: 63px;
+  right: 30px;
+  cursor: pointer;
 }
 
 /*  1-я секция */
@@ -127,7 +128,7 @@ header {
   margin-left: 0;
   margin-top: 0;
   padding-top: 90.87px;
-  line-height: .95;
+  line-height: 0.95;
 }
 
 .shop__link {
@@ -137,7 +138,7 @@ header {
   padding-left: 51px;
 }
 
-/*адаптив*/
+/* адаптив */
 
 @media screen and (min-width: 946px) and (max-width: 1024px) {
   body {
@@ -168,8 +169,8 @@ header {
   }
 
   .form__text {
-  width: 150px;
-  } 
+    width: 150px;
+  }
 
   .section__stock {
     min-width: 850px;
@@ -214,7 +215,8 @@ header {
   }
 }
 
-@media screen and (min-width: 721px) and (max-width: 800px){  
+@media screen and (min-width: 721px) and (max-width: 800px){
+  
   .section__stock {
     background-image: url(./rob-potter-phone.png);
     background-size: cover;
@@ -364,7 +366,7 @@ header {
     width: 41px;
     height: 5px;
     top: 38px;
-    right: 0px;
+    right: 0;
   }
 
   .section__stock {
@@ -386,7 +388,8 @@ header {
   .shop__link {
     font-size: 12px;
     padding-left: 27px;
-  } 
+  }
+
 }
 
 /* 2я секция */
@@ -438,7 +441,7 @@ header {
   cursor: pointer;
 }
 
-.colors__button::hover {
+.colors__button:hover {
   width: 9px;
   height: 9px;
 }
@@ -475,7 +478,7 @@ header {
   background-color: #257da9;
 }
 
-/*3я секция */
+/* 3я секция */
 
 .section__article {
   display: flex;
