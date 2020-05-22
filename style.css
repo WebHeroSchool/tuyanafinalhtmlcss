@@ -1,5 +1,10 @@
 * {
-  font-family: "GothamPro-Medium", sans-serif;
+  font-family: "GothamPro-Medium", sans-serif;  
+}
+
+html {
+  min-width: 199px;
+  max-width: 1500px;
 }
 
 /* header's style */
@@ -23,8 +28,8 @@ header {
   align-items: center;
   font-size: 12px;
   min-width: 770px;
-  max-width: 1600px;
-  margin: 0 70px 50px 70px;
+  max-width: 1500px;
+  margin: 0 45px 50px 60px;
 }
 
 .header__logo {
@@ -32,13 +37,14 @@ header {
 }
 
 .header__nav {
-  width: 495px;
+  width: 500px;
 }
 
 .nav__block {
   width: 335px;
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
 }
 
 .nav__link,
@@ -46,6 +52,18 @@ header {
 .cart__link {
   text-decoration: none;
   color: black;
+}
+
+.nav__link:hover {
+  opacity: 0.5;
+}
+
+.profile__link:hover {
+  opacity: 0.5;
+}
+
+.cart__link:hover {
+  opacity: 0.5;
 }
 
 .nav__link,
@@ -114,14 +132,14 @@ header {
   background-image: url(./rob-potter.png);
   background-size: cover;
   height: 280px;
-  margin: 0 70px 55px 70px;
+  margin: 0 45px 52px 60px;
   min-width: 770px;
   max-width: 1600px;
 }
 
 .shop__quote {
   color: white;
-  padding-left: 50px;
+  padding-left: 60px;
   font-size: 30px;
   margin-bottom: 15px;
   margin-left: 0;
@@ -134,10 +152,242 @@ header {
   color: white;
   text-decoration: none;
   font-size: 12px;
-  padding-left: 51px;
+  padding-left: 61px;
+}
+
+.shop__link:hover {
+  opacity: 0.5;
+}
+
+/* 2я секция */
+
+.section__featured {
+  margin: 0 45px 20px 60px;
+}
+
+.featured__title {
+  text-align: center;
+  font-size: 22px;
+}
+
+.featured__products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product {
+  position: relative;  
+  height: 261px;
+  width: 230px; 
+}
+
+.product__img {
+  margin: 0;
+  text-align: center;
+}
+
+.product__img_rasta800,
+.product__img_pepper800 {
+  display: none;
+}
+
+.product__rasta::before {
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1px;
+  height: 101px;
+  float: right; 
+  opacity: 0.3;
+  padding-top: 10px;
+  left: 249px;
+  top: 40px;
+}
+
+.product__chillipepper::before {
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1px;
+  height: 101px;
+  float: right; 
+  opacity: 0.3;
+  padding-top: 10px;
+  left: 249px;
+  top: 40px;
+}
+
+.product__rust::before {
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1px;
+  height: 101px;
+  float: right; 
+  opacity: 0.3;
+  padding-top: 10px;
+  left: 249px;
+  top: 40px;
+}
+
+.product__name {
+  font-size: 12px;
+  padding-top: 13px;
+  padding-left: 11px;
+  margin-bottom: 0;
+}
+
+.product__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 22px;  
+}
+
+.product__price {
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px solid c4c4c4;  
+  padding-left: 14px;
+}
+
+.colors__button {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.colors__black_rasta,
+.colors__orange_pepper,
+.colors__brown_rust,
+.colors__blue_electric {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+
+.colors__grey {
+  background-color: #c4c4c4;
+}
+
+.colors__black {
+  background-color: #0e1211;
+}
+
+.colors__red {
+  background-color: #b62e3c;
+}
+
+.colors__yellow {
+  background-color: #fdb431;
+}
+
+.colors__orange {
+  background-color: #e29d69;
+}
+
+.colors__brown {
+  background-color: #762e31;
+}
+
+.colors__blue {
+  background-color: #41479b;
+}
+
+.colors__blueelectric {
+  background-color: #257da9;
 }
 
 /* адаптив */
+
+@media screen and (min-width: 946px) and (max-width: 1100px) {
+  .product__img_rasta,
+  .product__img_pepper,
+  .product__img_rust,
+  .product__img_electric {
+    height: 173px;
+    width: 170px;
+  }
+
+  .product__img_rasta {
+    padding-right: 13px;
+  }
+
+  .product__img_electric {
+    padding-left: 15px;
+  }
+
+  .section__featured {
+    margin: 0 30px 20px 50px;
+  }
+
+  .product__name_rasta {
+    padding-left: 9px;
+  }
+
+  .product__name_pepper {
+    padding-left: 14px;
+  }
+
+  .product__name_rust {
+    padding-left: 24px;
+  }
+
+  .product__name_electric {
+    padding-left: 30px;
+  }
+
+  .product__price_rasta {
+    padding-left: 9px;
+  }
+
+  .product__price_pepper {
+    padding-left: 17px;
+  }
+
+  .product__price_rust {
+    padding-left: 24px;
+  }
+
+  .product__price_electric {
+    padding-left: 33px;
+  }
+
+  .product__colors_rasta {  
+    padding-right: 30px;
+  }
+
+  .product__colors_pepper {
+    padding-right: 20px;
+  }
+
+  .product__colors_rust {
+    padding-right: 10px;
+  }
+
+  .product__rasta::before {
+    left: 224px;
+  }
+
+  .product__chillipepper::before {
+    left: 229px;
+  }
+
+  .product__rust::before {
+    left: 237px;
+  }
+}
 
 @media screen and (min-width: 946px) and (max-width: 1024px) {
   body {
@@ -175,7 +425,7 @@ header {
     min-width: 850px;
     max-width: 930px;
     height: 252.82px;
-    margin: 0 30px 50px 50px;
+    margin: 0 30px 67px 50px;
   }
 
   .shop__quote {
@@ -202,15 +452,104 @@ header {
   .section__stock {
     margin: 0 0 10px 0;
   }
+
+  .product__electric {
+    display: none;
+  }
+
+  .product__rust::before {
+    display: none;
+  }
+
+  .section__featured {
+    margin: 0 0 20px 0;
+  }
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 376px) and (max-width: 800px) {
   .header__desktop {
-    visibility: hidden;
+    display: none;
   }
 
   .header__smallscreen {
     visibility: visible;
+  }
+
+  .product__electric,
+  .product__rust {
+    display: none;
+  }
+
+  .product__rust::before {
+    display: none;
+  }
+
+  .product__chillipepper::before {
+    display: none;
+  }
+
+  .product__rasta::before {
+    display: none;
+  }
+
+  .product__img_rasta,
+  .product__img_pepper {
+    display: none;
+  }
+
+  .product__img_rasta800,
+  .product__img_pepper800 {
+    display: inline;
+  }
+
+  .section__featured {
+    height: 484px;    
+  }
+
+  .featured__title {
+    font-size: 30px;
+  }
+
+  .product {
+    width: 290px;
+  }
+  .img__rasta {
+    padding-left: 20px;       
+  }  
+
+  .product__name {
+    font-size: 20px;    
+    padding-top: 0;
+    padding-left: 20px;
+    margin-top: 12px;
+  }
+
+  .product__name_rasta {
+    padding-left: 28px;
+  }
+
+  .product__price {
+    font-size: 25px;
+    padding-left: 30px;   
+  }
+
+  .product__price_pepper {
+    padding-left: 20px;
+  }
+
+  .product__options {   
+    height: 53px;
+  }
+
+  .colors__button {
+  width: 20px;
+  height: 20px;
+  }
+}
+
+@media screen and (min-width: 691px) and (max-width: 800px) {
+  .section__featured {
+    margin: 0 45px 20px 45px;
   }
 }
 
@@ -218,7 +557,7 @@ header {
   .section__stock {
     background-image: url(./rob-potter-phone.png);
     background-size: cover;
-    margin: 0 0 10px 0;
+    margin: 0 0 63px 0;
     min-width: 376px;
     max-width: 768px;
     height: 415px;
@@ -248,6 +587,22 @@ header {
     margin: 0 0 10px 0;
     min-width: 581px;
     max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 690px) {
+  
+.section__featured {
+    margin: 0 5px 20px 5px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 610px) {
+  .product__chillipepper {
+    display: none;
+  }
+  .featured__products {
+    justify-content: center;
   }
 }
 
@@ -309,7 +664,7 @@ header {
     position: relative;
     background-image: url(./rob-potter-phone.png);
     background-size: cover;
-    margin: 0 0 10px 0;
+    margin: 0 0 35px 0;
     min-width: 320px;
     max-width: 375px;
     height: 191px;
@@ -324,6 +679,81 @@ header {
   .shop__link {
     font-size: 12px;
     padding-left: 48px;
+  }  
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .product__options {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 319px) {
+  .product__options {
+    width: 240px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 375px) {
+  .product__chillipepper,
+  .product__rust,
+  .product__electric {
+    display: none;
+  }
+
+  .product__rust::before {
+    display: none;
+  }
+
+  .product__chillipepper::before {
+    display: none;
+  }
+
+  .product__rasta::before {
+    display: none;
+  }
+
+  .section__featured {
+    margin: 0 0px 20px 0px;
+  }
+
+  .featured__title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .featured__products {
+    justify-content: center;
+  }
+
+  .product__rasta {
+    width: 281px;
+    height: 248px;
+  }
+
+  .product__img_rasta {
+    width: 162.65px;
+    padding-left: 30px; 
+  }
+
+  .product__name_rasta {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 23px;
+  }
+
+  .product__price_rasta {
+    font-size: 20px;    
+  }
+
+  .product__options {
+    margin-left: 10px;
+    height: 30px;
+  }
+
+  .colors__button {
+  width: 15px;
+  height: 15px;
   }
 }
 
@@ -348,7 +778,7 @@ header {
 
   .smallscreen__logo_img {
     top: 24px;
-    left: 27px;
+    left: 20px;
     width: 104px;
     height: 22px;
   }
@@ -371,7 +801,7 @@ header {
     position: relative;
     background-image: url(./rob-potter320.png);
     background-size: cover;
-    margin: 0 0 10px 0;
+    margin: 0 0 35px 0;
     min-width: 320px;
     max-width: 375px;
     height: 191px;
@@ -380,99 +810,13 @@ header {
   .shop__quote {
     font-size: 20px;
     padding-top: 65px;
-    padding-left: 27px;
+    padding-left: 20px;
   }
 
   .shop__link {
     font-size: 12px;
-    padding-left: 27px;
+    padding-left: 20px;
   }
-}
-
-/* 2я секция */
-
-.section__featured {
-  margin: 0 70px 20px 70px;
-}
-
-.featured__title {
-  text-align: center;
-  font-size: 22px;
-}
-
-.featured__products {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.product {
-  height: 261px;
-  width: 230px;
-}
-
-.product__name {
-  font-size: 12px;
-}
-
-.product__options {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product__price {
-  font-size: 14px;
-  font-weight: bold;
-  border-right: 1px solid c4c4c4;
-}
-
-.colors__button {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: none;
-  padding: 0;
-  margin-right: 4px;
-  cursor: pointer;
-}
-
-.colors__button:hover {
-  width: 9px;
-  height: 9px;
-}
-
-.colors__grey {
-  background-color: #c4c4c4;
-}
-
-.colors__black {
-  background-color: #0e1211;
-}
-
-.colors__red {
-  background-color: #b62e3c;
-}
-
-.colors__yellow {
-  background-color: #fdb431;
-}
-
-.colors__orange {
-  background-color: #e29d69;
-}
-
-.colors__brown {
-  background-color: #762e31;
-}
-
-.colors__blue {
-  background-color: #41479b;
-}
-
-.colors__blueelectric {
-  background-color: #257da9;
 }
 
 /* 3я секция */
@@ -480,25 +824,124 @@ header {
 .section__article {
   display: flex;
   flex-direction: row;
+  background-color: black;
+  height: 494px;
+  max-width: 1600px;
+  min-width: 1000px;
+  margin: 0 45px 20px 60px;
+  justify-content: space-around;
 }
 
+.article__subtitle {
+  font-size: 22px;
+  color: white;
+}
+
+.article__text {
+  font-size: 14px;
+  color: white;
+}
+
+.article__link {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 /* 4я секция */
+
+.stories__title {
+  text-align: center;
+  font-size: 22px;
+}
 
 .stories__recent {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin: 0 45px 20px 60px;
+}
+
+.stories {
+  max-width: 307px;
+  min-width: 277px; 
+}
+
+.stories__subtitle {
+  font-size: 18px;
+}
+
+.stories__text {
+  font-size: 13px;
+}
+.stories__more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.stories__link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.stories__date {
+  opacity: 0.3;
+  font-size: 12px;
+}
+
+.stories__tag {
+  text-align: right;
+  opacity: 0.3;
+}
+
+.stories__photos {
+  margin: 0 70px 55px 70px;
 }
 
 /* footer */
 
+.footer {
+  background-color: black;
+}
+
 .footer__main {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin: 0 45px 20px 60px;
 }
 
 .footer__account,
 .footer__service,
 .footer__others {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+}
+
+.footer__subtitle {
+  color: white;
+  font-size: 12px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer__text_rights {
+  text-align: center;
+  color: white;
+}
+
+.footer__text_school {
+  text-align: right;
+  color: white;
+}
+
+.footer__img_school {
+  text-align: right;
 }
