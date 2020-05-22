@@ -62,8 +62,11 @@
     <h2 class="featured__title">FEATURED PRODUCT</h2>
     <div class="featured__products">
       <div class="product product__rasta">
-       <img class="product__img_rasta" src="./RastaAxion.png" alt="Rasta Axion">
-        <p class="product__name product__name_rasts">Atlas Black/Rasts Axion</p>
+        <p class="product__img img__rasta">
+          <img class="product__img_rasta" src="./RastaAxion.png" alt="Rasta Axion">
+          <img class="product__img_rasta800" src="./rasta800.png" alt="Rasta Axion">
+        </p>
+        <p class="product__name product__name_rasta">Atlas Black/Rasta Axion</p>
         <div class="product__options product__options_rasta">  
           <p class="product__price product__price_rasta">$89.00</p>
           <form class="product__colors product__colors_rasta">
@@ -75,8 +78,11 @@
         </div>  
       </div>
       <div class="product product__chillipepper">
-        <img class="product__img product__img_pepper" src="./ChilliPepper.png" alt="Chilli Pepper Axion">
-        <p class="product__name product__name_pepper">Camel/Chilli Pepper Axion</p>
+        <p class="product__img img__pepper">
+          <img class="product__img_pepper" src="./ChilliPepper.png" alt="Chilli Pepper Axion">
+          <img class="product__img_pepper800" src="./pepper800.png" alt="Chilli Pepper Axion">
+        </p>
+        <p class="product__name product__name_pepper">Camel/Chili Pepper Axion</p>
         <div class="product__options product__options_pepper">  
           <p class="product__price product__price_pepper">$74.00</p>
           <form class="product__colors product__colors_pepper">
@@ -88,7 +94,7 @@
         </div>  
       </div>
       <div class="product product__rust">
-        <img class="product__img product__img_rust" src="./RustAxion.png" alt="Rust Axion">
+        <p class="product__img"><img class="product__img_rust" src="./RustAxion.png" alt="Rust Axion"></p>
         <p class="product__name product__name_rust">Mandel Smoke/Rust Axion</p>
         <div class="product__options product__options_rust">  
           <p class="product__price product__price_rust">$69.00</p>
@@ -101,7 +107,7 @@
         </div>  
       </div>
       <div class="product product__electric">
-        <img class="product__img product__img_electric" src="./BlueAxion.png" alt="Electric Blue Axion">
+        <p class="product__img"><img class="product__img_electric" src="./BlueAxion.png" alt="Electric Blue Axion"></p>
         <p class="product__name product__name_electric">Cloud/Electric Blue Axion</p>
         <div class="product__options product__options_electric">  
           <p class="product__price product__price_electric">$69.00</p>
@@ -115,11 +121,13 @@
       </div>
     </div>    
   </section>
+
+  <!--
   <section class="section__article">
-    <div>
+    <div class="block__img">
       <img class="article__img" src="./section3.png" alt="image">
     </div>
-    <div>      
+    <div class="block__text">      
       <h2 class="article__subtitle">LEGENDARY<br>FOOTWEAR REBORN</h2>
       <p class="article__text">We are brand with a history and are relaunching in 2019. We've been a part of the skater's family ever since it's early teenage years. And now we presentate a new footwear collection.</p>
       <a class="article__link" href="##">LEARN MORE &rarr;</a>
@@ -132,25 +140,31 @@
         <img class="stories__img stories__img_anagoa" src="./Anagoa.png" alt="Justin Anagoa">
         <h3 class="stories__subtitle stories__subtitle_anagoa">Presents Justin Anagoa</h3>
         <p class="stories__text stories__text_anagoa">Anagoa's been a part of the skater's family even since his early teenage years. He's been known to go big on and off the board, but it's been rare we get a glimpse into how Aangoa lives his day-to-day, to see what makes Anagoa tick.</p>
-        <a class="stories__link stories__link_anagoa" href="##">LEARN MORE &rarr;</a>
-        <p class="stories__date stories__date_anagoa">11.08.2018</p>
+        <div class="stories__more">
+          <a class="stories__link stories__link_anagoa" href="##">LEARN MORE &rarr;</a>
+          <p class="stories__date stories__date_anagoa">11.08.2018</p>
+        </div>  
       </div>
       <div class="stories stories__reynolds">
         <img class="stories__img stories__img_reynolds" src="./Reynolds.png" alt="Andrew Reynolds">
         <h3 class="stories__subtitle stories_subtitle_reynolds">First Frontside Flip</h3>
         <p class="stories__text stories__text_reynolds">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on the Berrics. Click the image below to see the full gallery and read up on what happened that day.</p>
-        <a class="stories__link stiries__link_reynolds" href="##">LEARN MORE &rarr;</a>
-        <p class="stories__date stories__date_reynolds">17.08.2018</p>
+        <div class="stories__more">
+          <a class="stories__link stories__link_reynolds" href="##">LEARN MORE &rarr;</a>
+          <p class="stories__date stories__date_reynolds">17.08.2018</p>
+        </div>
       </div>
       <div class="stories stories__baekkel">
         <img class="stories__img stories__img_baekkel" src="./Baekkel.png" alt="Kevin Baekkel">
         <h3 class="stories__subtitle stories__subtitle_baekkel">Kevin Baekkel is pro</h3>
         <p class="stories__text stories__text_baekkel">Creature proudly announced today that they are officially adding Kevin Baekkel to their pro ruster. After paying his dues for years, killing it on last years Thrasher King of the road, and constantly lighting every spot he hits on fire.</p>
-        <a class="stories__link stories__link_baekkel" href="##">LEARN MORE &rarr;</a>
-        <p class="stories__date stories__date_baekkel">29.07.2018</p>
+        <div class="stories__more">
+          <a class="stories__link stories__link_baekkel" href="##">LEARN MORE &rarr;</a>
+          <p class="stories__date stories__date_baekkel">29.07.2018</p>
+        </div>
       </div>
     </div>
-    <div>
+    <div class="stories__photos">
       <p class="stories__tag">#AXIONFOOTWEAR</p>
       <img class="stories__img stories__img_additional" src="./Rectangle 3.png" alt="Alex Perez">
       <img class="stories__img stories__img_additional" src="./Rectangle 3.1.png" alt="Jeff Kepler">
