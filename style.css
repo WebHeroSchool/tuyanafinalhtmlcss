@@ -609,7 +609,7 @@ header {
 }
 
 @media screen and (min-width: 611px) and (max-width: 690px) {
-.section__featured {
+  .section__featured {
     margin: 0 5px 20px 5px;
   }
 }
@@ -697,7 +697,7 @@ header {
   .shop__link {
     font-size: 12px;
     padding-left: 48px;
-  }  
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
