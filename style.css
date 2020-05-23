@@ -1,12 +1,12 @@
 * {
-  font-family: "GothamPro-Medium", sans-serif;  
+  font-family: "GothamPro-Medium", sans-serif;
 }
 
 html {
-	min-width: 199px;
-	max-width: 1600px;
-	padding: 0;
-	margin: 0 auto;
+  min-width: 199px;
+  max-width: 1600px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 /* header's style */
@@ -56,23 +56,19 @@ header {
   color: black;
 }
 
-.nav__link:hover {
-	opacity: 0.5;
-}
-
-.profile__link:hover {
-	opacity: 0.5;
-}
-
-.cart__link:hover {
-	opacity: 0.5;
-}
-
 .nav__link,
 .header__profile,
 .header__cart,
 .header__language {
   padding-top: 18px;
+}
+
+.nav__link:hover {
+  opacity: 0.5;
+}
+
+.profile__link:hover {
+  opacity: 0.5;
 }
 
 .header__search {
@@ -95,6 +91,10 @@ header {
 
 .cart__link {
   padding-top: 2px;
+}
+
+.cart__link:hover {
+  opacity: 0.5;
 }
 
 .cart__quantity {
@@ -158,15 +158,15 @@ header {
 }
 
 .shop__link:hover {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 .shop__arrow {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .shop__arrow:hover {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* 2я секция */
@@ -187,58 +187,58 @@ header {
 }
 
 .product {
-  position: relative;  
+  position: relative;
   height: 261px;
-  width: 230px; 
+  width: 230px;
 }
 
 .product__img {
-	margin: 0;
-	text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .product__img_rasta800,
 .product__img_pepper800 {
-	display: none;
+  display: none;
 }
 
 .product__rasta::before {
-	position: absolute;
-	content: "";
-	background: black;
-	width: 1px;
-	height: 101px;
-	float: right;	
-	opacity: 0.3;
-	padding-top: 10px;
-	left: 249px;
-	top: 40px;
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1px;
+  height: 101px;
+  float: right;
+  opacity: 0.3;
+  padding-top: 10px;
+  left: 249px;
+  top: 40px;
 }
 
 .product__chillipepper::before {
-	position: absolute;
-	content: "";
-	background: black;
-	width: 1px;
-	height: 101px;
-	float: right;	
-	opacity: 0.3;
-	padding-top: 10px;
-	left: 249px;
-	top: 40px;
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1px;
+  height: 101px;
+  float: right;
+  opacity: 0.3;
+  padding-top: 10px;
+  left: 249px;
+  top: 40px;
 }
 
 .product__rust::before {
-	position: absolute;
-	content: "";
-	background: black;
-	width: 1px;
-	height: 101px;
-	float: right;	
-	opacity: 0.3;
-	padding-top: 10px;
-	left: 249px;
-	top: 40px;
+  position: absolute;
+  content: "";
+  background: black;
+  width: 1px;
+  height: 101px;
+  float: right;
+  opacity: 0.3;
+  padding-top: 10px;
+  left: 249px;
+  top: 40px;
 }
 
 .product__name {
@@ -253,13 +253,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 22px;  
+  height: 22px;
 }
 
 .product__price {
   font-size: 14px;
   font-weight: bold;
-  border-right: 1px solid c4c4c4;  
+  border-right: 1px solid c4c4c4;
   padding-left: 14px;
 }
 
@@ -277,7 +277,7 @@ header {
 .colors__orange_pepper,
 .colors__brown_rust,
 .colors__blue_electric {
-	width: 9px;
+  width: 9px;
   height: 9px;
   border-radius: 50%;
   border: none;
@@ -285,7 +285,6 @@ header {
   margin-right: 4px;
   cursor: pointer;
 }
-
 
 .colors__grey {
   background-color: #c4c4c4;
@@ -322,81 +321,81 @@ header {
 /* адаптив */
 
 @media screen and (min-width: 946px) and (max-width: 1100px) {
-	.product__img_rasta,
-	.product__img_pepper,
-	.product__img_rust,
-	.product__img_electric {
-		height: 173px;
-		width: 170px;
-	}
+  .product__img_rasta,
+  .product__img_pepper,
+  .product__img_rust,
+  .product__img_electric {
+    height: 173px;
+    width: 170px;
+  }
 
-	.product__img_rasta {
-		padding-right: 13px;
-	}
+  .product__img_rasta {
+    padding-right: 13px;
+  }
 
-	.product__img_electric {
-		padding-left: 15px;
-	}
+  .product__img_electric {
+    padding-left: 15px;
+  }
 
-	.section__featured {
-  	margin: 0 30px 20px 50px;
-	}
+  .section__featured {
+    margin: 0 30px 20px 50px;
+  }
 
-	.product__name_rasta {
-		padding-left: 9px;
-	}
+  .product__name_rasta {
+    padding-left: 9px;
+  }
 
-	.product__name_pepper {
-		padding-left: 14px;
-	}
+  .product__name_pepper {
+    padding-left: 14px;
+  }
 
-	.product__name_rust {
-		padding-left: 24px;
-	}
+  .product__name_rust {
+    padding-left: 24px;
+  }
 
-	.product__name_electric {
-		padding-left: 30px;
-	}
+  .product__name_electric {
+    padding-left: 30px;
+  }
 
-	.product__price_rasta {
-		padding-left: 9px;
-	}
+  .product__price_rasta {
+    padding-left: 9px;
+  }
 
-	.product__price_pepper {
-		padding-left: 17px;
-	}
+  .product__price_pepper {
+    padding-left: 17px;
+  }
 
-	.product__price_rust {
-		padding-left: 24px;
-	}
+  .product__price_rust {
+    padding-left: 24px;
+  }
 
-	.product__price_electric {
-		padding-left: 33px;
-	}
+  .product__price_electric {
+    padding-left: 33px;
+  }
 
-	.product__colors_rasta {
-		padding-right: 30px;
-	}
+  .product__colors_rasta {
+    padding-right: 30px;
+  }
 
-	.product__colors_pepper {
-		padding-right: 20px;
-	}
+  .product__colors_pepper {
+    padding-right: 20px;
+  }
 
-	.product__colors_rust {
-		padding-right: 10px;
-	}
+  .product__colors_rust {
+    padding-right: 10px;
+  }
 
-	.product__rasta::before {
-		left: 224px;
-	}
+  .product__rasta::before {
+    left: 224px;
+  }
 
-	.product__chillipepper::before {
-		left: 229px;
-	}
+  .product__chillipepper::before {
+    left: 229px;
+  }
 
-	.product__rust::before {
-		left: 237px;
-	}
+  .product__rust::before {
+    left: 237px;
+  }
 }
 
 @media screen and (min-width: 946px) and (max-width: 1024px) {
@@ -464,25 +463,25 @@ header {
   }
 
   .product__electric {
-  	display: none;
+    display: none;
   }
 
   .product__rust::before {
-  	display: none;
+    display: none;
   }
 
   .section__featured {
-  	margin: 0 0 20px 0;
+    margin: 0 0 20px 0;
   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 800px) {
   body {
-  	margin: 0;
+    margin: 0;
   }
 
   header {
-  	margin-bottom: 18px;
+    margin-bottom: 18px;
   }
 
   .header__desktop {
@@ -495,80 +494,81 @@ header {
 
   .product__electric,
   .product__rust {
-  	display: none;
+    display: none;
   }
 
   .product__rust::before {
-  	display: none;
+    display: none;
   }
 
   .product__chillipepper::before {
-  	display: none;
+    display: none;
   }
 
   .product__rasta::before {
-  	display: none;
+    display: none;
   }
 
   .product__img_rasta,
   .product__img_pepper {
-  	display: none;
+    display: none;
   }
 
   .product__img_rasta800,
   .product__img_pepper800 {
-  	display: inline;
+    display: inline;
   }
 
   .section__featured {
-  	height: 484px;
+    height: 484px;
   }
 
   .featured__title {
-  	font-size: 30px;
+    font-size: 30px;
   }
 
   .product {
-  	width: 290px;
+    width: 290px;
   }
+
   .img__rasta {
-  	padding-left: 35px;
-  }  
+    padding-left: 35px;
+  }
 
   .product__name {
-  	font-size: 20px;
-  	padding-top: 0;
-  	padding-left: 12px;
-  	margin-top: 12px;
+    font-size: 20px;
+    padding-top: 0;
+    padding-left: 12px;
+    margin-top: 12px;
   }
 
   .product__name_rasta {
-  	padding-left: 36px;
+    padding-left: 36px;
   }
 
   .product__price {
-  	font-size: 25px;
-  	padding-left: 38px;
+    font-size: 25px;
+    padding-left: 38px;
   }
 
   .product__price_pepper {
-  	padding-left: 12px;
+    padding-left: 12px;
   }
 
   .product__options {
-  	height: 53px;
+    height: 53px;
   }
 
   .colors__button {
-  width: 20px;
-  height: 20px;
-	}
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (min-width: 691px) and (max-width: 800px) {
-	.section__featured {
-		margin: 0 45px 20px 45px;
-	}
+  .section__featured {
+    margin: 0 45px 20px 45px;
+  }
 }
 
 @media screen and (min-width: 721px) and (max-width: 800px) {
@@ -609,19 +609,19 @@ header {
 }
 
 @media screen and (min-width: 611px) and (max-width: 690px) {
-	
 .section__featured {
-		margin: 0 5px 20px 5px;
-	}
+    margin: 0 5px 20px 5px;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 610px) {
-	.product__chillipepper {
-		display: none;
-	}
-	.featured__products {
-		justify-content: center;
-	}
+  .product__chillipepper {
+    display: none;
+  }
+
+  .featured__products {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 580px) {
@@ -716,52 +716,52 @@ header {
   .product__chillipepper,
   .product__rust,
   .product__electric {
-  	display: none;
+    display: none;
   }
 
   .product__rust::before {
-  	display: none;
+    display: none;
   }
 
   .product__chillipepper::before {
-  	display: none;
+    display: none;
   }
 
   .product__rasta::before {
-  	display: none;
+    display: none;
   }
 
   .section__featured {
-		margin: 0 0px 20px 0px;
-	}
+    margin: 0 0 20px 0;
+  }
 
   .featured__title {
-  	font-size: 20px;
-  	margin-bottom: 0;
+    font-size: 20px;
+    margin-bottom: 0;
   }
 
   .featured__products {
-  	justify-content: center;
+    justify-content: center;
   }
 
   .product__rasta {
-  	width: 281px;
-  	height: 248px;
+    width: 281px;
+    height: 248px;
   }
 
   .product__img_rasta {
     width: 162.65px;
-    padding-left: 30px; 
+    padding-left: 30px;
   }
 
   .product__name_rasta {
-  	font-size: 15px;
+    font-size: 15px;
     padding-top: 10px;
     padding-left: 23px;
   }
 
   .product__price_rasta {
-  	font-size: 20px;    
+    font-size: 20px;
   }
 
   .product__options {
@@ -770,9 +770,9 @@ header {
   }
 
   .colors__button {
-  width: 15px;
-  height: 15px;
-	}
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media screen and (min-width: 200px) and (max-width: 320px) {
@@ -866,6 +866,7 @@ header {
   color: white;
   cursor: pointer;
 }
+
 /* 4я секция */
 
 .stories__title {
@@ -882,7 +883,7 @@ header {
 
 .stories {
   max-width: 307px;
-  min-width: 277px; 
+  min-width: 277px;
 }
 
 .stories__subtitle {
@@ -892,11 +893,13 @@ header {
 .stories__text {
   font-size: 13px;
 }
+
 .stories__more {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .stories__link {
   text-decoration: none;
   color: black;
@@ -935,7 +938,7 @@ header {
 .footer__service,
 .footer__others {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .footer__subtitle {
