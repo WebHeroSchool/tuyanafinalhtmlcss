@@ -14,6 +14,7 @@ html {
 header {
   height: 95px;
   margin-bottom: 10px;
+  margin-right: 18px;
 }
 
 .header__smallscreen {
@@ -115,7 +116,7 @@ header {
   height: 8.89px;
   background: #000;
   top: 46px;
-  right: 30px;
+  right: 46px;
   cursor: pointer;
 }
 
@@ -125,7 +126,7 @@ header {
   height: 8.89px;
   background: #000;
   top: 63px;
-  right: 30px;
+  right: 46px;
   cursor: pointer;
 }
 
@@ -135,7 +136,7 @@ header {
   background-image: url(./rob-potter.png);
   background-size: cover;
   height: 280px;
-  margin: 0 45px 52px 60px;
+  margin: 0 60px 52px 60px;
   min-width: 770px;
   max-width: 1600px;
 }
@@ -173,7 +174,7 @@ header {
 /* 2я секция */
 
 .section__featured {
-  margin: 0 45px 20px 60px;
+  margin: 0 60px 20px 60px;
 }
 
 .featured__title {
@@ -337,6 +338,57 @@ header {
     height: 173px;
     width: 170px;
   }
+}
+
+@media screen and (min-width: 946px) and (max-width: 1024px) {
+  body {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  header {
+    margin-bottom: 23px;
+  }
+
+  .header__desktop {
+    min-width: 850px;
+    max-width: 930px;
+    margin: 8px 30px 50px 50px;
+  }
+
+  .header__nav {
+    width: 395px;
+  }
+
+  .nav__block {
+    padding-left: 5px;
+  }
+
+  .header__search {
+    padding-left: 52px;
+  }
+
+  .form__text {
+    width: 150px;
+  }
+
+  .section__stock {
+    min-width: 850px;
+    max-width: 930px;
+    height: 252.82px;
+    margin: 0 30px 67px 50px;
+  }
+
+  .shop__quote {
+    padding-top: 77px;
+    padding-left: 52px;
+    margin-bottom: 7px;
+  }
+
+  .shop__link {
+    padding-left: 54px;
+  }
+
 
   .product__img_rasta {
     padding-right: 13px;
@@ -347,7 +399,7 @@ header {
   }
 
   .section__featured {
-    margin: 0 30px 20px 50px;
+    margin: 0 45px 20px 50px;
   }
 
   .product__name_rasta {
@@ -404,56 +456,6 @@ header {
 
   .product__rust::before {
     left: 237px;
-  }
-}
-
-@media screen and (min-width: 946px) and (max-width: 1024px) {
-  body {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  header {
-    margin-bottom: 23px;
-  }
-
-  .header__desktop {
-    min-width: 850px;
-    max-width: 930px;
-    margin: 8px 30px 50px 50px;
-  }
-
-  .header__nav {
-    width: 395px;
-  }
-
-  .nav__block {
-    padding-left: 5px;
-  }
-
-  .header__search {
-    padding-left: 52px;
-  }
-
-  .form__text {
-    width: 150px;
-  }
-
-  .section__stock {
-    min-width: 850px;
-    max-width: 930px;
-    height: 252.82px;
-    margin: 0 30px 67px 50px;
-  }
-
-  .shop__quote {
-    padding-top: 77px;
-    padding-left: 52px;
-    margin-bottom: 7px;
-  }
-
-  .shop__link {
-    padding-left: 54px;
   }
 }
 
@@ -538,6 +540,7 @@ header {
 
   .featured__title {
     font-size: 30px;
+    padding-right: 16px;
   }
 
   .product {
@@ -548,15 +551,27 @@ header {
     padding-left: 35px;
   }
 
+  .img__pepper {
+    padding-right: 40px;
+  }
+
   .product__name {
     font-size: 20px;
-    padding-top: 0;
-    padding-left: 12px;
-    margin-top: 12px;
+    padding-top: 12px;    
+    margin-top: 0px;
   }
 
   .product__name_rasta {
     padding-left: 36px;
+  }
+
+  .product__name_pepper {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  .product__price_pepper {
+    padding-left: 0;
   }
 
   .product__options {
@@ -574,8 +589,8 @@ header {
   }
 
   .product__colors_pepper {
-    padding-right: 10px;
-  }
+    padding-right: 27px;
+  }  
 
   .colors__button {
     width: 20px;
@@ -691,14 +706,14 @@ header {
     width: 41px;
     height: 5px;
     top: 28px;
-    right: 30px;
+    right: 47px;
   }
 
   .burger__bottom {
     width: 41px;
     height: 5px;
     top: 38px;
-    right: 30px;
+    right: 47px;
   }
 
   .section__stock {
@@ -735,7 +750,7 @@ header {
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 375px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
   .product__chillipepper,
   .product__rust,
   .product__electric {
@@ -761,6 +776,7 @@ header {
   .featured__title {
     font-size: 20px;
     margin-bottom: 0;
+    padding-right: 7px;
   }
 
   .featured__products {
@@ -774,24 +790,24 @@ header {
 
   .product__img_rasta {
     width: 162.65px;
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   .product__name_rasta {
     font-size: 15px;
     padding-top: 23px;
-    padding-left: 23px;
+    padding-left: 15px;
   }
 
   .product__options {
     height: 40px;
-    width: 293px;
+    width: 285px;
   }
 
   .product__price_rasta {
     font-size: 20px;
     padding-top: 10px;
-    padding-left: 24px;
+    padding-left: 14px;
   }
 
   .colors__button {
@@ -830,15 +846,15 @@ header {
   .burger__top {
     width: 41px;
     height: 5px;
-    top: 28px;
-    right: 0;
+    top: 26px;
+    right: 20px;
   }
 
   .burger__bottom {
     width: 41px;
     height: 5px;
-    top: 38px;
-    right: 0;
+    top: 36px;
+    right: 20px;
   }
 
   .section__stock {
@@ -860,6 +876,71 @@ header {
   .shop__link {
     font-size: 12px;
     padding-left: 20px;
+  }
+
+  .product__chillipepper,
+  .product__rust,
+  .product__electric {
+    display: none;
+  }
+
+  .product__rust::before {
+    display: none;
+  }
+
+  .product__chillipepper::before {
+    display: none;
+  }
+
+  .product__rasta::before {
+    display: none;
+  }
+
+  .section__featured {
+    margin: 0 0 20px 0;
+  }
+
+  .featured__title {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-right: 7px;
+  }
+
+  .featured__products {
+    justify-content: center;
+  }
+
+  .product__rasta {
+    width: 281px;
+    height: 248px;
+  }
+
+  .product__img_rasta {
+    width: 162.65px;
+    padding-left: 10px;
+  }
+
+  .product__name_rasta {
+    font-size: 15px;
+    padding-top: 23px;
+    padding-left: 15px;
+  }
+
+  .product__options {
+    height: 40px;
+    width: 285px;
+  }
+
+  .product__price_rasta {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 14px;
+  }
+
+  .colors__button {
+    width: 15px;
+    height: 15px;
+    margin-right: 0;
   }
 }
 
