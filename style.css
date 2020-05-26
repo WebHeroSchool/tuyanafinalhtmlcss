@@ -389,7 +389,6 @@ header {
     padding-left: 54px;
   }
 
-
   .product__img_rasta {
     padding-right: 13px;
   }
@@ -557,8 +556,8 @@ header {
 
   .product__name {
     font-size: 20px;
-    padding-top: 12px;    
-    margin-top: 0px;
+    padding-top: 12px;
+    margin-top: 0;
   }
 
   .product__name_rasta {
@@ -590,7 +589,7 @@ header {
 
   .product__colors_pepper {
     padding-right: 27px;
-  }  
+  }
 
   .colors__button {
     width: 20px;
