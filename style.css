@@ -1066,7 +1066,7 @@ header {
   .block__text {
     padding-top: 136px;
     padding-right: 0;
-    }
+  }
 
   .article__subtitle {
     margin-bottom: 10px;
@@ -1284,9 +1284,9 @@ header {
     height: 385px;
     }
 
-  .section__article:before {
-    content:'';
-    position:absolute;
+  .section__article::before {
+    content: '';
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -1696,9 +1696,9 @@ header {
     margin-bottom: 282px;
   }
 
-  .section__stories:after {
-    content:'';
-    position:absolute;
+  .section__stories::after {
+    content: '';
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -1877,7 +1877,7 @@ header {
   cursor: pointer;
   line-height: 18px;
 }
- 
+
 .footer__link:hover {
   opacity: 0.5;
 }
@@ -2002,7 +2002,7 @@ header {
 
   .footer__school {
     display: none;
-  }  
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 767px) {
