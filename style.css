@@ -360,7 +360,6 @@ header {
   }
 }
 
-
 @media screen and (min-width: 946px) and (max-width: 1024px) {
   body {
     margin-right: 0;
@@ -998,7 +997,7 @@ header {
 .block__img {
   padding-top: 65px;
   padding-left: 10px;
-  }
+}
 
 .block__text {
   max-width: 266px;
@@ -1028,7 +1027,6 @@ header {
 .article__link {
   margin-top: 0;
   cursor: pointer;
-  margin-top: 0;
 }
 
 .article__link:hover {
@@ -1038,7 +1036,7 @@ header {
 .learn__link {
   font-size: 12px;
   text-decoration: none;
-  color: white;  
+  color: white;
 }
 
 /* адаптив */
@@ -1087,7 +1085,7 @@ header {
 }
 
 @media screen and (min-width: 951px) and (max-width: 1024px) {
-    .article__img {
+  .article__img {
     max-height: 345px;
     max-width: 578px;
     min-width: 500px;
@@ -1100,7 +1098,7 @@ header {
     max-width: 500px;
     min-width: 430px;
     max-height: 309px;
-    min-width: 200px;
+    min-height: 200px;
   }
 }
 
@@ -1111,6 +1109,7 @@ header {
     max-height: 270px;
     min-height: 230px;
   }
+
   .block__img {
     padding-top: 100px;
   }
@@ -1122,6 +1121,7 @@ header {
     height: 540px;
     margin: 0 0 98px 0;
   }
+
   .article__subtitle {
     display: none;
   }
@@ -1140,7 +1140,7 @@ header {
     margin-right: 85px;
     margin-left: 85px;
   }
-  
+
   .article__text {
     font-size: 15px;
   }
@@ -1154,8 +1154,6 @@ header {
     padding-top: 0;
     padding-left: 0;
   }
-
-
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
@@ -1168,9 +1166,9 @@ header {
     height: 610px;
     }
 
-  .section__article:before {
-    content:'';
-    position:absolute;
+  .section__article::before {
+    content: '';
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -1184,6 +1182,7 @@ header {
   .article__subtitle {
     display: none;
   }
+
   .article__subtitle_smallscreen {
     display: block;
     color: white;
@@ -1371,7 +1370,7 @@ header {
 .stories__subtitle {
   font-size: 18px;
   margin-top: 0;
-  margin-bottom: 8px;  
+  margin-bottom: 8px;
 }
 
 .stories__text {
@@ -1400,7 +1399,7 @@ header {
 
 .recent__link:hover {
   opacity: 0.5;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .stories__link {
@@ -1432,7 +1431,7 @@ header {
 }
 
 .stories__img {
-  margin-bottom: 25px;  
+  margin-bottom: 25px;
 }
 
 .stories__img_additional {
@@ -1525,7 +1524,7 @@ header {
 
   .stories__recent {
     justify-content: space-around;
-  }  
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 890px) {
@@ -1542,9 +1541,9 @@ header {
     margin-bottom: 350px;
   }
 
-  .section__stories:after {
-    content:'';
-    position:absolute;
+  .section__stories::after {
+    content: '';
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -1566,7 +1565,7 @@ header {
   .stories__title {
     font-size: 30px;
     padding-top: 87px;
-    color: white; 
+    color: white;
   }
 
   .stories__recent {
@@ -1775,7 +1774,7 @@ header {
   }
 
   .stories__img_gutierrez {
-    display: inline
+    display: inline;
   }
 
   .stories__img_andrew {
@@ -1795,7 +1794,7 @@ header {
   }
 
   .stories__img_ruben {
-    display:none;
+    display: none;
   }
 
   .stories__img_brooke {
@@ -1900,7 +1899,7 @@ header {
   border: 1.5px solid white;
   color: white;
   margin-bottom: 29px;
-  font-size: 10px
+  font-size: 10px;
 }
 
 .footer__link_social {
@@ -1934,7 +1933,7 @@ header {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .footer__main {
     padding-left: 60px;
-    padding-top: 66px
+    padding-top: 66px;
   }
 
   .footer__text_rights {
@@ -1952,7 +1951,7 @@ header {
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px){
+@media screen and (min-width: 376px) and (max-width: 768px) {
   .footer {
     max-width: 768px;
     min-width: 376px;
@@ -1971,7 +1970,7 @@ header {
 
   .footer__service {
     padding-left: 0;
-    padding-right: 8px; 
+    padding-right: 8px;
   }
 
   .footer__others {
@@ -2155,10 +2154,6 @@ header {
 
   .footer__link_instagram {
     padding-right: 32px;
-  }
-
-  .footer__link_pinterest {
-    
   }
 
   .footer__bottom {
