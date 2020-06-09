@@ -1282,7 +1282,7 @@ header {
     min-width: 200px;
     margin: 0 0 0 0;
     height: 385px;
-    }
+  }
 
   .section__article::before {
     content: '';
